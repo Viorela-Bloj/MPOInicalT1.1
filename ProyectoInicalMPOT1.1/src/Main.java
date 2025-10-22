@@ -12,7 +12,8 @@ public class Main {
         opercionesMatematicas.resta(8,2);
         opercionesMatematicas.resta(8,5);
         opercionesMatematicas.sumar(10,50);
-
+        System.out.println(opercionesMatematicas.multiplicar(7,3)*4);
+        System.out.println("EL numero que se intenta validad tiene como resultado; "+opercionesMatematicas.validarNumero(28));
     }
 
         public static void saludar(String nombre){
