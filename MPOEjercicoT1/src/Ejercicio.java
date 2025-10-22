@@ -36,9 +36,45 @@ public class Ejercicio {
         // Es recomendado ya que inicias un grupo de datos, cerrarlo.
         lecturaTeclado = null;
     }
-    //EJERCIOS 4
+    //EJERCIO 2
+       // 1.Pedir datos.
+    public void ejercicio2(){
+        lecturaTeclado = new Scanner(System.in);
+        System.out.println("Introduce el valor de IVA de la compra (0 a 500): ");
+        double compravalorIVA = lecturaTeclado.nextDouble();
+        //2. Realizar datos.
+        //3. Mostrar datos.
+        lecturaTeclado.close();
+        lecturaTeclado = null;
+    }
+
+    //EJERCIO 3
+      // 1.Pedir datos.
+    //2. Realizar datos.
+    public void ejercicio3(){
+        lecturaTeclado = new Scanner(System.in);
+        System.out.println("Intoroduc el digito de las decenas de mil: ");
+        int numeroDecenasMil=lecturaTeclado.nextInt();
+        System.out.println("Introduce el dígito de las unidades de mil: ");
+        int numeroUnidadesMil =lecturaTeclado.nextInt();
+        System.out.println("Introduce el dígito de las centenas: ");
+        int numeroCentenas =lecturaTeclado.nextInt();
+        System.out.println("Introduce el dígito de las decenas: ");
+        int numeroDecenas =lecturaTeclado.nextInt();
+        System.out.println("Introduce el dígito de las unidades : ");
+        int numeroUnidades =lecturaTeclado.nextInt();
+        //3. Mostrar datos.
+        int numero= numeroDecenasMil*10000+numeroUnidadesMil*1000+numeroCentenas*100+numeroDecenas*10+numeroUnidades;
+        System.out.println("El número completo es: "+numero);
+
+    }
+
+
+
+
+    //EJERCIO 4
     public void ejercios4(){
-        //1. Pedior datos.
+        //1. Pedir datos.
         lecturaTeclado = new Scanner(System.in);
         System.out.println("Cuantos segundos quieres pasar a tiempo");
         int segundosTotal = lecturaTeclado.nextInt(); //24973.
